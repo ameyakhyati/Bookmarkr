@@ -56,7 +56,6 @@ const onDelete = async (e) => {
 	);
 };
 
-
 const setBookmarkControl = (icon, handler, parent) => {
 	const controlButton = document.createElement("img");
 	controlButton.src = chrome.runtime.getURL("assets/" + icon + ".png");

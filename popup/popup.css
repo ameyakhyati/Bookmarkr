@@ -1,76 +1,74 @@
 body {
-  font-family: "Chelsea Market", cursive;
-  margin: 0;
-  padding: 0;
+	font-family: "Chelsea Market", cursive;
+	margin: 0;
+	padding: 0;
 }
 
 .container {
-  background: #87CEFA;
-  width: 310px;
-  padding: 12px;
+	background: #87cefa;
+	width: 310px;
+	padding: 12px;
 }
 
 .title {
-  font-family: 'Chelsea Market', cursive;
-  text-align: center;
-  font-size: 22px;
-  border-bottom: 1px solid black;
-  padding-bottom: 5px;
-  margin-top: 3px;
+	font-family: "Chelsea Market", cursive;
+	text-align: center;
+	font-size: 22px;
+	border-bottom: 1px solid black;
+	padding-bottom: 5px;
+	margin-top: 3px;
 }
 
 .subtitle {
-  font-family: 'Catamaran', sans-serif;
-  font-weight: 600;
-  padding-bottom: 10px;
-  text-align: center;
+	font-family: "Catamaran", sans-serif;
+	font-weight: 600;
+	padding-bottom: 10px;
+	text-align: center;
 }
 
 .content p,
 .content .hint {
-  font-family: 'Chelsea Market', cursive;
-  margin: 6px 0;
+	font-family: "Chelsea Market", cursive;
+	margin: 6px 0;
 }
 
-
-
 #noVideoTimestamp-view {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: left; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: left;
 }
 
 .hidden {
-  display: none !important;
+	display: none !important;
 }
 
 .bookmarks {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
 }
 
 .bookmark-item {
-  display: flex;
-  align-items: center;
-  padding: 8px 12px;
-  border-radius: 20px;
-  background: white;
-  font-family: 'Catamaran', sans-serif;
+	display: flex;
+	align-items: center;
+	padding: 8px 12px;
+	border-radius: 20px;
+	background: white;
+	font-family: "Catamaran", sans-serif;
 }
 
 .bookmark-text {
-  flex-grow: 1;
-  font-size: 14px;
-  margin-left: 10px;
+	flex-grow: 1;
+	font-size: 14px;
+	margin-left: 10px;
 }
 
 .control-button {
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 8px;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 8px;
 }

@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bookmarkr</title>
-  <link rel="stylesheet" href="popup.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Catamaran:wght@400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="container">
-    <h1 class="title">Bookmarkr</h1>
-    <div id="bookmarks-view" class="content">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bookmarkr</title>
+		<link rel="stylesheet" href="popup.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Catamaran:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="title">Bookmarkr</h1>
+			<div id="bookmarks-view" class="content">
+				<p class="subtitle">Your bookmarked timestamps for this video are :</p>
+				<div class="bookmarks" id="bookmarks"></div>
+			</div>
 
-      <p class="subtitle">  Your bookmarked timestamps for this video are :</p>
-      <div class="bookmarks" id="bookmarks"></div>
-    </div>
+			<div id="empty-view" class="content hidden">
+				<p>
+					Hmm...<br />
+					It doesn’t look like you are watching any YouTube video at the moment.
+				</p>
+				<p class="hint">
+					Go to a YouTube video to access its bookmarked timestamps.
+				</p>
+			</div>
 
-
-    <div id="empty-view" class="content hidden">
-		<p>Hmm...<br>
-      	It doesn’t look like you are watching any YouTube video at the moment.</p>
-      	<p class="hint">Go to a YouTube video to access its bookmarked timestamps.</p>
-    </div>
-
-    <div id="noVideoTimestamp-view" class="content hidden">
-		<p>  You don’t have any timestamps bookmarked for the current video.</p>
-      	<p class="hint"><i>  Click on the bookmark icon to add timestamps for the video.</i></p>
-    </div>
-  </div>
-  <script type="module" src="popup.js"></script>
-</body>
+			<div id="noVideoTimestamp-view" class="content hidden">
+				<p>You don’t have any timestamps bookmarked for the current video.</p>
+				<p class="hint">
+					<i> Click on the bookmark icon to add timestamps for the video.</i>
+				</p>
+			</div>
+		</div>
+		<script type="module" src="popup.js"></script>
+	</body>
 </html>

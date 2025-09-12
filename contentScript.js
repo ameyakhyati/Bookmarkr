@@ -20,7 +20,7 @@
 			});
 			sendResponse(currentVideoBookmarks);
 		}
-        return true;
+		return true;
 	});
 
 	const fetchBookmarks = () => {
@@ -35,8 +35,9 @@
 	};
 
 	const newVideoLoaded = async () => {
-        currentVideoBookmarks = await fetchBookmarks();
-		const bookmarkButtonExists = document.getElementsByClassName("bookmark-button")[0];
+		currentVideoBookmarks = await fetchBookmarks();
+		const bookmarkButtonExists =
+			document.getElementsByClassName("bookmark-button")[0];
 
 		youtubePlayer = document.querySelector(".video-stream");
 		youtubeLeftControls = document.querySelector(".ytp-left-controls");
@@ -53,7 +54,7 @@
 	};
 
 	const addNewBookmarkEventHandler = async () => {
-        if (!youtubePlayer) return;
+		if (!youtubePlayer) return;
 
 		const currentTime = youtubePlayer.currentTime;
 		const newBookmark = {
@@ -76,5 +77,5 @@
 		return date.toISOString().substr(11, 8);
 	}
 
-    newVideoLoaded();
+	newVideoLoaded();
 })();
